@@ -5,9 +5,10 @@
 replicaCount: 2
 
 image:
-  repository: chandraanwar/content-service:latest
+  repository: chandraanwar/content-service
   #pullPolicy: IfNotPresent
   pullPolicy: Always
+  tag: latest
 
 imagePullSecrets:
   - name: default-secret
