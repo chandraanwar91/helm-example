@@ -5,7 +5,7 @@
 replicaCount: 2
 
 image:
-  repository: chandraanwar/content-service
+  repository: chandraanwar/content-service:latest
   #pullPolicy: IfNotPresent
   pullPolicy: Always
 
