@@ -5,7 +5,7 @@
 replicaCount: 2
 
 image:
-  repository: docker.io/chandraanwar/content-service
+  repository: chandraanwar/content-service
   #pullPolicy: IfNotPresent
   pullPolicy: Always
 
