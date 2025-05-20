@@ -6,9 +6,9 @@ replicaCount: 2
 
 image:
   repository: chandraanwar/content-service
+  tag: latest
   #pullPolicy: IfNotPresent
   pullPolicy: Always
-  tag: latest
 
 imagePullSecrets:
   - name: default-secret
@@ -94,3 +94,5 @@ Application:
     enabled: false
     path: ""
     data: {}
+
+Tag: "latest"
