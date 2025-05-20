@@ -1,0 +1,11 @@
+{{- if .Values.Application.volume.enabled }}
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: {{ .Chart.Name }}-config
+  namespace: {{ .Values.Application.namespace }}
+  annotations:
+    originName: {{ .Chart.Name }}-config
+data:
+  {{- toYaml .Values.Application.volume.data | nindent 12 }}
+{{- end }}
