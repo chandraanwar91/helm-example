@@ -84,3 +84,12 @@ tolerations: []
 affinity: {}
 
 command: ["/app/main"]
+
+Application:
+  namespace: "default"
+  env: 
+    HTTP_PORT: ODAwMA==
+  volume:
+    enabled: false
+    path: ""
+    data: {}
