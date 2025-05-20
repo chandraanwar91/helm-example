@@ -9,8 +9,7 @@ image:
   #pullPolicy: IfNotPresent
   pullPolicy: Always
 
-imagePullSecrets:
-  - name: default-secret
+imagePullSecrets: []
 
 nameOverride: ""
 fullnameOverride: ""
